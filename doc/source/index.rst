@@ -2,78 +2,51 @@
 Open Telekom Cloud DevOps Portal
 ================================
 
-Here you can find documentation for the helpful tools that can be used for
-working with Open Telekom Cloud
+.. raw:: html
 
+    <div class="startpage-container">
+        <a href="services/sdk.html">
+            <div class="startpage-item">            
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>SDK</h3>
+                <p>Software Development Kits for Open Telekom Cloud.</p>
+            </div>
+        </a>
+        <a href="services/infrastructure_as_code.html">
+            <div class="startpage-item">            
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>Infrastructure as Code Tools</h3>
+                <p>Useful tools to create, manage and delete infrastructure on Open Telekom Cloud.</p>
+            </div>
+        </a>
+        <a href="services/cli.html">
+            <div class="startpage-item">            
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>CLI</h3>
+                <p>Command Line Interface tools for Open Telekom Cloud.</p>
+            </div>
+        </a>
+        <a href="services/driver_and_tools.html">
+            <div class="startpage-item">            
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>Other Driver and Tools</h3>
+                <p>Useful Tools for Open Telekom Cloud.</p>
+            </div>
+        </a>
+    </div>
 
-SDK
----
+.. toctree::
+   :maxdepth: 1
 
-.. list-table::
-   :widths: 30 70
-   :class: .table-bordered
+   services/sdk
+   CLI <services/cli>
+   services/infrastructure_as_code
+   services/driver_and_tools
 
-   * - Python
-     - `<https://docs.otc-service.com/python-otcextensions>`_
-   * - Golang
-     - `<https://github.com/opentelekomcloud/gophertelekomcloud/>`_
-   * - JavaScript
-     - `<https://github.com/opentelekomcloud/oms/>`_
+.. raw:: html
 
-`Infrastructure as Code` Tools
-------------------------------
-
-.. container:: clearfix
-
-   .. container:: col-lg-4 col-md-4 col-md-12 col-12  service-box
-
-      |acc|
-
-   .. container:: col-lg-4 col-md-4 col-md-12 col-12  service-box
-
-      |tf|
-
-CLI
----
-
-.. list-table::
-   :widths: 30 70
-   :class: .table-bordered
-
-   * - OpenStackClient
-     - `<https://docs.openstack.org/python-openstackclient/>`_
-   * - OpenStackClient Open Telekom Cloud plugins
-     - `OpenStackClient Open Telekom Cloud plugins <https://docs.otc-service.com/python-otcextensions>`_
-
-Other Drivers and Tools
------------------------
-
-.. list-table::
-   :widths: 30 70
-   :class: .table-bordered
-
-   * - Docker machine driver
-     - `<https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
-   * - Rancher Open Telekom Cloud CCE driver
-     - `<https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
-
-Cloud Connect Configuration
----------------------------
-
-Open Telekom Cloud tools are easy to :doc:`configure <configuration>`. All credentials can be
-configured conveniently in a few files. Open Telekom Cloud configuration is general for all tools above.
-
-.. |ansible| image:: /images/ansible.svg
-   :width: 200px
-   :alt: Ansible
-   :target: https://www.ansible.com
-.. |acc| image:: /images/ansible.svg
-   :width: 200px
-   :height: 200px
-   :alt: Open Telekom Cloud Ansible Collection
-   :target: https://docs.otc-service.com/ansible-collection-cloud
-.. |tf| image:: /images/tf.png
-   :alt: HashiCorp Terraform
-   :width: 200px
-   :height: 200px
-   :target: https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
+    <style>
+        .toctree-wrapper {
+            display: none;
+        }
+    </style>
